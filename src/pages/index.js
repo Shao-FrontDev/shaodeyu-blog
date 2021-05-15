@@ -1,14 +1,23 @@
+import { Link } from "gatsby";
 import * as React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
+import * as styles from "../styles/home.module.css";
 
-const IndexPage = () => {
+const Home = () => {
   return (
-    <Layout pageTitle='Home Page'>
-      <p>
-        I'm making this by following the Gatsby Tutorial.
-      </p>
+    <Layout>
+      <section className={styles.header}>
+        <div>
+          <h2>Design</h2>
+          <h3>Develop</h3>
+          <p>UX designer</p>
+          <Link className={styles.btn} to='/projects'>
+            My Portfolio
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default Home;
