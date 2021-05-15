@@ -14,6 +14,7 @@ const Home = () => {
           <Link className={styles.btn} to='/projects'>
             My Portfolio
           </Link>
+          <p></p>
         </div>
       </section>
     </Layout>
