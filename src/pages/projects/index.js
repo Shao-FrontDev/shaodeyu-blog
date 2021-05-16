@@ -9,8 +9,6 @@ export default function Projects({ data }) {
   return (
     <Layout>
       <div className={styles.portfolio}>
-        <h2>Hello world</h2>
-        <h3>Github</h3>
         <div className={styles.projects}>
           {projects.map((project) => {
             return (
