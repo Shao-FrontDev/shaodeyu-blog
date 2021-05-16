@@ -23,8 +23,8 @@ export default function Navbar() {
       </div>
 
       <div className='links'>
-        <Link to='/'>Blog</Link>
-        <Link to='/projects'>Portfolio Projects</Link>
+        <Link to='/'>Articles</Link>
+        <Link to='/projects'>Projects</Link>
       </div>
     </nav>
   );
