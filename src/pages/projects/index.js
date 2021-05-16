@@ -11,7 +11,7 @@ export default function Projects({ data }) {
       <div className={styles.portfolio}>
         <h2>Hello world</h2>
         <h3>Github</h3>
-        <div>
+        <div className={styles.projects}>
           {projects.map((project) => {
             return (
               <Link

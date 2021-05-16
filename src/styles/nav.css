@@ -1,0 +1,46 @@
+nav .info h1 {
+  color: #ffa7c4;
+  margin-top: 1em;
+  font-size: 16px;
+  padding: 0.25em;
+  text-align: center;
+}
+
+nav .info p {
+  font-size: 12px;
+  text-align: center;
+}
+
+nav .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1em;
+  padding: 0.8em 0;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+nav a:hover {
+  color: #ffa7c4;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+/* 
+@media screen and (min-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+  }
+  nav .links {
+    flex-direction: row;
+  }
+  nav a {
+    margin-right: 1em;
+  }
+} */

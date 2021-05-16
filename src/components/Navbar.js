@@ -7,18 +7,23 @@ export default function Navbar() {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
   `);
 
   const { title } = data.site.siteMetadata;
+  const { description } = data.site.siteMetadata;
   return (
     <nav>
-      <h1>{title}</h1>
+      <div className='info'>
+        <h1>{title}</h1>
+        <p>{description}</p>
+      </div>
+
       <div className='links'>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
+        <Link to='/'>Blog</Link>
         <Link to='/projects'>Portfolio Projects</Link>
       </div>
     </nav>

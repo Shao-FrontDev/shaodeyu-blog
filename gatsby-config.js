@@ -15,7 +15,7 @@ module.exports = {
   ],
   siteMetadata: {
     title: "Shaodeyu's blog",
-    description: "web dev portfolio",
+    description: "Personal blog by Shaodeyu.",
     copyright: "This website is copyright 2021",
   },
 };

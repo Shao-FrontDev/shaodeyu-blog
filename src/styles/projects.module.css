@@ -2,10 +2,52 @@
   text-align: center;
 }
 .portfolio > h2 {
+  display: none;
   font-size: 3em;
   margin-top: 80px;
 }
 .portfolio > h3 {
+  display: none;
   font-size: 2em;
   font-weight: 400;
+}
+
+.projects {
+  display: flex;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.projects a {
+  flex-basis: 100%;
+  /* flex: 1; */
+}
+
+.projects h3 {
+  text-align: center;
+  margin: 20px auto 0px;
+  transition: all 1s ease;
+}
+
+.projects h3:hover {
+  color: #ffa7c4;
+  transition: all 1s ease;
+  transform: scale(1.1);
+}
+
+.projects p {
+  color: #ccc;
+  margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio > h2 {
+    display: block;
+  }
+  .portfolio > h3 {
+    display: block;
+  }
+  .projects a {
+    flex: 1;
+  }
 }
