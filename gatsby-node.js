@@ -1,7 +1,8 @@
-const path = require("path");
+const path = require(`path`);
+
 exports.createPages = async ({ graphql, actions }) => {
   const { data } = await graphql(`
-    query Projects {
+    query ProjectsPage {
       allMarkdownRemark {
         nodes {
           frontmatter {
@@ -13,12 +14,13 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   data.allMarkdownRemark.nodes.forEach((node) => {
+    const slug = node.frontmatter.slug;
     actions.createPage({
-      path: "/projects/" + node.frontmatter.slug,
+      path: "/projects/" + slug,
       component: path.resolve(
         "./src/templates/project-details.js"
       ),
-      content: { slug: node.frontmatter.slug },
+      context: { slug: slug },
     });
   });
 };

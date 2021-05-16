@@ -1,14 +1,33 @@
 .details h2 {
-  font-size: 3.5em;
-  margin-top: 80px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 20px;
 }
 
 .details h3 {
-  font-size: 2em;
+  text-align: center;
+  font-size: 1em;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .html {
   margin-top: 40px;
+  margin: 0 auto;
+  max-width: 630px;
+}
+
+.html code {
+  margin: 1em 0;
+  border-radius: 0.5em;
+  display: block;
+  padding: 1em;
+  background: #011627;
+  font-size: 0.8em;
+  font-family: Consolas, Menlo, Monaco, source-code-pro,
+    Courier New, monospace;
+}
+
+.html code h2 {
+  text-align: left;
 }

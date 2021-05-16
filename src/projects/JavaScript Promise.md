@@ -5,7 +5,6 @@ slug: promise
 ---
 
 **Ajax Promise Axios**
-\*\*
 
 ## 异步编程
 
@@ -14,24 +13,17 @@ slug: promise
 - **AJAX**
 - **定时器**
 
-\*\*
-\*\*
-\*\*
-\*\*
-** Promise 是一个构造函数，在使用 Promise 的时候需要对他进行实例化**
-\*\*
+Promise 是一个构造函数，在使用 Promise 的时候需要对他进行实例化
+
 **Promise 接收一个参数，这个参数是一个函数。 ---- 记为 fn**
-\*\*
+
 **Fn 这个函数接收两个函数**
 **resolve 解决 函数类型的数据**
 **reject 拒绝 函数类型的数据**
-\*\*
-
-\*\*
 
 ### Promise 和 AJAX 的结合
 
-** 普通 AJAX **
+普通 AJAX
 
 ```javascript
 const btn = document.querySelector("#btn");
@@ -131,7 +123,6 @@ sendAJAX("https://api.apiopen.top/getJoke").then(
 - reject
 
 **Promise 执行器中的代码是同步调用的**
-\*\*
 
 ## Promise API
 
